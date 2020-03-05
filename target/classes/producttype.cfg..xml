@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="hibernate.beginingHibernate.ProductType" table="ProductType">
+		<id name="idProductType" column="idProductType">
+			<generator class="native" />
+		</id>
+		<property name="productTypeName" column = "ProductTypeName" type = "string"/>
+		<property name="parentIdProductType" column = "ParentIdProductType" type = "int"/>
+	</class>
+</hibernate-mapping>
