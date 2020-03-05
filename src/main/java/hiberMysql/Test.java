@@ -17,7 +17,7 @@ public class Test {
 
 			// session.save(new ProductType("Milk products", 1));
 			// session.save(new ProductType("Goals&Pasta", 1));
-			session.save(new ProductType("Bread", 1));
+			session.save(new ProductType("Vegetables", 1));
 
 			session.getTransaction().commit();
 			session.close();

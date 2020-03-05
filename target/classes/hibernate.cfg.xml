@@ -23,7 +23,7 @@
 		<property name="format_sql">true</property>
 		<property name="hbm2ddl.auto">update</property>
 
-		<!-- <mapping resource = "producttype.cfg.xml"/> -->
+		
 		<mapping class="hiberMysql.ProductType" />
 
 	</session-factory>

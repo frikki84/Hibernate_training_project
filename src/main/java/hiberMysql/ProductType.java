@@ -1,16 +1,22 @@
 package hiberMysql;
 
+import javax.persistence.Basic;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 
 @Entity
 public class ProductType {
 
 	@Id
+	// @GeneratedValue
 	private int idProductType;
 
+	@Basic(optional = false, fetch = FetchType.LAZY)
 	private String productTypeName;
 
+	@Column(name = "parentId")
 	private int parentIdProductType;
 
 	public ProductType() {

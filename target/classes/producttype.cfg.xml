@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hibernate-mapping>
-	<class name="hibernate.beginingHibernate.ProductType" table="ProductType">
+	<class name="hiberMysql.ProductType" table="ProductType">
 		<id name="idProductType" column="idProductType">
 			<generator class="native" />
 		</id>
