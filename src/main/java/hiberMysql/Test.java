@@ -17,7 +17,8 @@ public class Test {
 
 			// session.save(new ProductType("Milk products", 1));
 			// session.save(new ProductType("Goals&Pasta", 1));
-			session.save(new ProductType("Vegetables", 1));
+
+			session.save(new Suppliers("ОАО \"Рубин\""));
 
 			session.getTransaction().commit();
 			session.close();

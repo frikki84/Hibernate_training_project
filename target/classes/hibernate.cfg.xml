@@ -23,8 +23,10 @@
 		<property name="format_sql">true</property>
 		<property name="hbm2ddl.auto">update</property>
 
+		<mapping class ="hiberMysql.ProductType"></mapping>
+		<mapping class="hiberMysql.Product" />
+		<mapping class ="hiberMysql.Suppliers"></mapping>
 		
-		<mapping class="hiberMysql.ProductType" />
 
 	</session-factory>
 </hibernate-configuration>

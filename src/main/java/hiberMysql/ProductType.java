@@ -14,6 +14,7 @@ public class ProductType {
 	private int idProductType;
 
 	@Basic(optional = false, fetch = FetchType.LAZY)
+	@Column(name = "nameProductType")
 	private String productTypeName;
 
 	@Column(name = "parentId")
