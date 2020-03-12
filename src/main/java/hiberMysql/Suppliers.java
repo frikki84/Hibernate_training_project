@@ -11,7 +11,7 @@ public class Suppliers {
 	@Id
 	private int idSuplier;
 
-	@Basic(optional = false)
+	@Basic
 	private String nameSupllier;
 
 	@Enumerated(EnumType.STRING)
