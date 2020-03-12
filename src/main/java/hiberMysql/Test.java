@@ -9,7 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 public class Test {
 
 	public static void main(String[] args) {
-		Shopping sh;
+		Emploeer sh;
 
 		final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure() // configures settings from hibernate.cfg.xml
 				.build();
@@ -17,13 +17,14 @@ public class Test {
 			Session session = sessionFactory.openSession();
 			session.beginTransaction();
 
-			session.save(new Shopping(2, 7, 400, 0.8));
+			// session.save(new Emploeer(new Pasport("VP", "002587"), "lIZA", "Ilaeva"));
+			sh = session.get(Emploeer.class, new Pasport("VP", "002587"));
 
 			session.getTransaction().commit();
 			session.close();
 
 		}
-		// System.out.println(suppliers);
+		System.out.println(sh);
 
 	}
 }

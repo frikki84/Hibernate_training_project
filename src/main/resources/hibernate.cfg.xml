@@ -29,6 +29,8 @@
 		<mapping class="hiberMysql.WayBill"/>
 		<mapping class="hiberMysql.Shopping"></mapping>
 		<mapping class="hiberMysql.SellWayBill"></mapping>
+		<mapping class="hiberMysql.Emploeer"></mapping>
+		
 
 	</session-factory>
 </hibernate-configuration>

@@ -1,8 +1,6 @@
 package hiberMysql;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.hibernate.annotations.Formula;
@@ -10,7 +8,6 @@ import org.hibernate.annotations.Formula;
 @Entity
 public class Shopping {
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
 	private int idShopping;
 
 	private int idWayBill;
