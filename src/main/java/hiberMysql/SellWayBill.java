@@ -10,6 +10,8 @@ import javax.persistence.Id;
 
 public class SellWayBill {
 
+	public static String java;
+
 	@Id
 	@Column(name = "idSellBill")
 	private int id;
@@ -18,7 +20,7 @@ public class SellWayBill {
 	// @Temporal(TemporalType.DATE)
 	private GregorianCalendar calendar;
 
-	// @Column(name = "Number")
+	@Column(name = "Number")
 	private String number;
 
 	private int sellerId;

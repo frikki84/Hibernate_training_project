@@ -1,5 +1,6 @@
 package hiberMysql;
 
+import javax.persistence.Access;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -8,12 +9,13 @@ import javax.persistence.Id;
 
 @Entity
 public class Suppliers {
-	@Id
+
 	private int idSuplier;
 
 	@Basic
 	private String nameSupllier;
 
+	@Access(javax.persistence.AccessType.FIELD)
 	@Enumerated(EnumType.STRING)
 	private Town town;
 
@@ -53,6 +55,7 @@ public class Suppliers {
 		this.bankAdress = bankAdress;
 	}
 
+	@Id
 	public int getIdSuplier() {
 		return idSuplier;
 	}

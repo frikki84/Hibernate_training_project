@@ -1,13 +1,16 @@
 package hiberMysql;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.hibernate.annotations.Formula;
 
-@Entity(name = "Purchases")
+@Entity
 public class Shopping {
 	@Id
+	@GeneratedValue(strategy = GenerationType.TABLE)
 	private int idShopping;
 
 	private int idWayBill;
@@ -15,8 +18,9 @@ public class Shopping {
 
 	private double quantityShopping;
 	private double priceShopping;
+
 	@Formula("quantityShopping * priceShopping")
-	private double totalCost;
+	transient private double totalCost;
 
 	public Shopping() {
 		super();
